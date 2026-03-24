@@ -1,4 +1,4 @@
-package com.company;
+package com.company.chapter1;
 
 // write a program to calculate percentage of a given student,
 // his marks for 5 subjects must be taken as input, marks are out of 100

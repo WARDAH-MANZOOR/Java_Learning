@@ -1,4 +1,4 @@
-package com.company;
+package com.company.chapter1;
 import java.util.Scanner;
 public class TakingInput {
     public static void main(String[] args) {

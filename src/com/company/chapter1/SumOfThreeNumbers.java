@@ -1,4 +1,4 @@
-package com.company;
+package com.company.chapter1;
 
 public class SumOfThreeNumbers {
     public static void main(String[] args){
