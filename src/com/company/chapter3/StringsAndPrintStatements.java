@@ -1,5 +1,8 @@
 package com.company.chapter3;
 import java.util.Scanner;
+
+// STRINGS: strings immutable hote hain  matlab ye ke original string jo humne banaya ahi wo kabhi bhi
+// change nahi hota hai copy me change hota hai original string wahi rehta hai
 public class StringsAndPrintStatements {
     public static void main(String[] args) {
         String name = "Wardah";  // string
