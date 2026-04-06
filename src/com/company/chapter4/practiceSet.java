@@ -30,5 +30,28 @@ public class practiceSet {
         else{
             System.out.println("You are not promoted");
         }
+
+        System.out.println("QUESTION # 03 Calculate income tax paid by an employee to the government as per the slabs mentioned below\n\t Income Slab  \t Tax \n\t 2.5L-5.0L  \t 5%\n\t 5.0L-10.0L  \t 10%\n\t Above 10.0L  \t 30%\n Note: There is no tax below 2.5 lac income.Take amount as an input from user");
+        float income = sc.nextFloat();
+
+        float tax = 0;
+
+        if(income <= 2.5f){
+            tax = 0;
+        }
+        else if(income <= 5.0f){
+            tax = (income - 2.5f) * 0.05f;
+        }
+        else if(income <= 10.0f){
+            tax = (5.0f - 2.5f) * 0.05f; // first slab
+            tax += (income - 5.0f) * 0.10f; // second slab
+        }
+        else{
+            tax = (5.0f - 2.5f) * 0.05f; // first slab
+            tax += (10.0f - 5.0f) * 0.10f; // second slab
+            tax += (income - 10.0f) * 0.30f; // third slab
+        }
+
+        System.out.println("Your tax is: " + tax + " lac");
     }
 }
