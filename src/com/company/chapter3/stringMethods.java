@@ -52,6 +52,24 @@ public class stringMethods {
         System.out.println(name1.indexOf("ry",5)); // start finding the ry index from index 5
         System.out.println(name1.indexOf("Her")); // jo substring nahi milega uspar -1 return karta hai
 
+        // lastIndexOf Method: returns the last occurence index of the substring
+        System.out.println(name1.lastIndexOf("ry"));
+        System.out.println(name1.lastIndexOf("ry",6));// isme bola hai ke 6 index tak me hi jo ry hai uska last index return karo
+
+        // Equals Method: Case Sensitive
+        String name2 = "Wardah";
+        System.out.println(name2.equals("Wardah"));
+
+        // EqualsIgnoreCase Method: ignores the case means it is not case sensitive
+        System.out.println(name2.equalsIgnoreCase("wardah"));
+
+
+        // Escape Sequence Characters (\n (new line), \t (tab), \(escape) , \\(for printing 1 /)
+        System.out.println("My name is \"  Wardah");
+        System.out.println("My name is \\ Wardah");
+        System.out.println("My name is \\\\Wardah");
+        System.out.println("My name is \t Wardah");
+        System.out.println("My name is \n Wardah");
     }
 }
 
