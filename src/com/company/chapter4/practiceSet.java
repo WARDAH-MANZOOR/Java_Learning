@@ -76,6 +76,21 @@ public class practiceSet {
             System.out.println("not leap year");
         }
 
+        System.out.println("Write a program to find out the type of website from the url \n .com --- commercial website \n .org ---  organizational website \n .pk --- pakistani website");
+        String website = sc.next();
+        if (website.endsWith(".com")){
+            System.out.println("Commercial website");
+        }
+        else if(website.endsWith(".org")){
+            System.out.println("Organizational website");
+        }
+        else if(website.endsWith(".pk")){
+            System.out.println("Pakistani website");
+        }
+        else{
+            System.out.println("Invalid website");
+        }
+
 
     }
 }
