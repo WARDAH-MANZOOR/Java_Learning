@@ -16,5 +16,10 @@ public class forLoop {
             System.out.println(2*a);
         }
 
+        // decrementing in loop
+        for (int i=5;i>0;i--){
+            System.out.println(i);
+        }
+
     }
 }
