@@ -53,5 +53,29 @@ public class practiceSet {
         }
 
         System.out.println("Your tax is: " + tax + " lac");
+
+        System.out.println("QUESTION # 04: Write a program to find out the day of the week by given the number [1 for monday, 2 for tueday and so on]");
+        int day = sc.nextInt();
+        switch(day){
+            case 1 -> System.out.println("Its Monday");
+            case 2 -> System.out.println("Its Tuesday");
+            case 3 -> System.out.println("Its Wednesday");
+            case 4 -> System.out.println("Its Thursday");
+            case 5 -> System.out.println("Its Friday");
+            case 6 -> System.out.println("Its Saturday");
+            case 7 -> System.out.println("Its Sunday");
+            default -> System.out.println("Invalid day");
+
+        }
+        System.out.println("QUESTION # 05: Write a program to find whether the year entered by user is a leap year or not?");
+        int year = sc.nextInt();
+        if (year%400==0){
+            System.out.println("leap year");
+        }
+        else{
+            System.out.println("not leap year");
+        }
+
+
     }
 }
