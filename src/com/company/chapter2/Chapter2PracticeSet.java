@@ -35,7 +35,7 @@ public class Chapter2PracticeSet {
         double result = (v * v - u * u) / (2 * a * S);
         System.out.println(result);
 
-        System.out.println("QUESTION # 05 : find the value of teh following expression : int x = 7 , int d = 7 * 49/7 + 35/7, value of d ?");
+        System.out.println("QUESTION # 05 : find the value of the following expression : int x = 7 , int d = 7 * 49/7 + 35/7, value of d ?");
         int x = 7;
         int d = x * 49/x + 35/x;
         System.out.println(d);
