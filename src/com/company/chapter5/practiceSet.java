@@ -57,7 +57,23 @@ public class practiceSet {
         }
         System.out.println("Factorial of " + num1 + " is: " + factorial1);
 
-        System.out.println("QUESTION # 07: ");
+        System.out.println("QUESTION # 07: Repeat Question 1 using while loop");
+        int e = 4;
+        int f = e;
+
+        while(f > 0){
+            int j = 1;
+
+            while(j <= f){
+                System.out.print("* ");
+                j++;
+            }
+
+            System.out.println(); // next line
+            f--;
+        }
+
+
 
     }
 }
