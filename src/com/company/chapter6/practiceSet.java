@@ -30,7 +30,41 @@ public class practiceSet {
             System.out.println("number is not present in an array");
         }
         System.out.println("QUESTION # 03: Calculate the average marks from an array containing marks of all students in Physics using for each loop");
+        int [] Physics_marks = {56,67,87,87,23,55};
+        sum = 0;
+        for(int element:Physics_marks){
+            sum = sum + element;
+        }
+        float avg =  sum/Physics_marks.length;
+        System.out.println(avg);
+
         System.out.println("QUESTION # 04: Create a program to add two metrics of size 2x3");
+        int [][] metric1 = {{34,54,21},
+                            {23,65,20}};
+        int [][] metric2 = {{21,33,58},
+                            {69,54,32}};
+        int [][] result = {{0,0,0},
+                           {0,0,0}};
+        for (int i=0;i<metric1.length;i++){//rows
+            for (int j=0;j<metric1[i].length;j++){// columns
+                System.out.format("Setting value for i =%d and j=%d \n",i,j);
+                result[i][j] = metric1[i][j]+metric2[i][j];
+
+            }
+        }
+        //for printing result:
+        for (int i=0;i<metric1.length;i++){//rows
+            for (int j=0;j<metric1[i].length;j++){// columns
+                System.out.print(result[i][j]+" ");
+                result[i][j] = metric1[i][j]+metric2[i][j];
+
+
+            }
+
+            System.out.println("");
+        }
+
+
         System.out.println("QUESTION # 05: Write a program to reverese an array");
         System.out.println("QUESTION # 06: Write a program to find maximum element in array");
         System.out.println("QUETSION # 07: Write  aprogram to find miniumum element in array");
