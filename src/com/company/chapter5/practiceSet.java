@@ -28,6 +28,37 @@ public class practiceSet {
         for(int a = 1; a<=10;a++){
             System.out.printf("%d * %d = %d \n", table, a, table*a);
         }
+
+        System.out.println("QUESTION # 04: Write a program to print multiplication table of 10 in reverse order");
+
+        int table1 = 10 ;
+
+        for(int a =10; a>=1;a--){
+            System.out.printf("%d * %d = %d \n", table1, a, table1*a);
+        }
+        System.out.println("QUESTION # 05: Write a program to find factorial of a given number using for loop");
+        int num = 5;   // jis number ka factorial chahiye
+        int factorial = 1;
+
+        for(int b = 1; b <= num; b++){
+            factorial = factorial * b;
+        }
+
+        System.out.println("Factorial of " + num + " is: " + factorial);
+
+        System.out.println("QUESTION # 06: Repeat 5 using while loop:Write a program to find factorial of a given number using while loop");
+        int num1 = 5;   // jis number ka factorial chahiye
+        int factorial1 = 1;
+        int d = 1;
+        while(d<=num1){
+            factorial1 = factorial1 * d;
+            d++;
+
+        }
+        System.out.println("Factorial of " + num1 + " is: " + factorial1);
+
+        System.out.println("QUESTION # 07: ");
+
     }
 }
 
