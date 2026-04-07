@@ -72,6 +72,17 @@ public class practiceSet {
             System.out.println(); // next line
             f--;
         }
+        System.out.println("QUESTION # 08: Write a program to calculate the sum of numbers occuring in the multiplication table of 8");
+        int table2 = 8;
+        int sum1 = 0;
+        for(int a = 1; a<=10;a++){
+            int result = table2 * a;
+            sum1 = sum1 + result;
+        }
+        System.out.println(sum1);
+
+
+
 
 
 
