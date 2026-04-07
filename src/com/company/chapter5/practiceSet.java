@@ -80,8 +80,14 @@ public class practiceSet {
             sum1 = sum1 + result;
         }
         System.out.println(sum1);
+        System.out.println("QUESTION # 09: Repeat 2 using for loop");
+        int sum3 = 0;
+        for (int g=1;g<=10;g++){
+            int even1 = 2* g;
+            sum3 = sum3 + even1;
 
-
+        }
+        System.out.println("Sum of even numbers!" + sum3);
 
 
 
