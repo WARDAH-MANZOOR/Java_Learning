@@ -42,6 +42,45 @@ public class practiceSet {
             return fabonacci(n-1)+fabonacci(n-2);
         }
     }
+    static float average(int ...arr){
+        // now arguments avaiable as int [] arr
+        float result=0;
+        for(int a:arr){
+            result+=a;
+
+        }
+        return result/arr.length;
+
+    }
+    static void recursivePattern2(int n){
+        if(n == 0){
+            return;   // base case
+        }
+
+        // print one row
+        for(int i = 0; i < n; i++){
+            System.out.print("* ");
+        }
+        System.out.println();
+
+        // recursive call
+        recursivePattern2(n - 1);
+    }
+
+    static void recursivePattern1(int n){
+        if(n == 0){
+            return;   // base case
+        }
+
+        // pehle chhota problem solve karo
+        recursivePattern1(n - 1);
+
+        // phir current row print karo
+        for(int i = 0; i < n; i++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
         System.out.println("PRACTICE QUESTIONS FOR CHAPTER 7");
         System.out.println("QUESTION # 01: Write a program to print multiplication table of number n\n ---------------------------------------------");
@@ -60,6 +99,12 @@ public class practiceSet {
         //  index khud batay hua hota tou usse start hota
         int b = fabonacci(5);
         System.out.println(b);
-        System.out.println("QUESTION # 06: Write  afunction to find average of a set of numbers passed as argumenets\n ---------------------------------------------");
+        System.out.println("QUESTION # 06: Write  a function to find average of a set of numbers passed as argumenets\n ---------------------------------------------");
+        System.out.println(average(5,6,8,9,1,2));
+        System.out.println("QUESTION # 07: Repeat 4 using Recursion\n ---------------------------------------------");
+        recursivePattern2(4);
+        System.out.println("QUESTION # 08: Repeat 2 using Recursion\n ---------------------------------------------");
+        recursivePattern1(4);
+
     }
 }
