@@ -81,13 +81,25 @@ public class practiceSet {
         }
         System.out.println();
     }
+    static float celsiusToFahrenheit(float c){
+        return (9.0f/5.0f) * c + 32;
+    }
+    static int sumIterative(int n){
+        int sum = 0;
+
+        for(int i = 1; i <= n; i++){
+            sum += i;
+        }
+
+        return sum;
+    }
     public static void main(String[] args) {
         System.out.println("PRACTICE QUESTIONS FOR CHAPTER 7");
         System.out.println("QUESTION # 01: Write a program to print multiplication table of number n\n ---------------------------------------------");
         table(7);
         System.out.println("QUESTION # 02: Write a program using functions to print the following pattern \n\t *\n\t * *\n\t * * *\n\t * * * *\n ---------------------------------------------");
         pattern1(8);
-        System.out.println("QUESTION # 03: Write a recursive function to calculate teh sum of na natural numbers\n --------------------------------------------- ");
+        System.out.println("QUESTION # 03: Write a recursive function to calculate teh sum of n natural numbers\n --------------------------------------------- ");
         int a = sumRec(4);
         System.out.println(a);
 
@@ -105,6 +117,10 @@ public class practiceSet {
         recursivePattern2(4);
         System.out.println("QUESTION # 08: Repeat 2 using Recursion\n ---------------------------------------------");
         recursivePattern1(4);
+        System.out.println("QUESTION # 09: Write a function to convert celcius temperature in to fahrenhite \n ---------------------------------------------");
+        System.out.println(celsiusToFahrenheit(25));
+        System.out.println("QUESTION # 10: Repeat 3 using Iterative Approach\n ---------------------------------------------");
+        System.out.println(sumIterative(5));
 
     }
 }
