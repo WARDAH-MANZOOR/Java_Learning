@@ -30,6 +30,45 @@ class myEmployeeOld{ // ye function same as access modifier ki file ki tarah hai
         return name;
     }
 }
+
+class myEmployeeUsingConstructor{ // is class me ab hum aik aesa method banainge jo same name hoga class ki tarah jisse
+    // constructor kehte hain, is constructor me jo private id aur name hai wo hum define kardenge directly tou phr humme
+    // getter aur settre ke functions nahi banane parenge hum bas directly unko call karlenge object banakar
+    private int id;  // private
+    private String name; //private
+    // Constructor (no return type)
+    public myEmployeeUsingConstructor() {
+        id = 45;
+        name = "Wardah";
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+class myEmployeeUsingConstructorWithParameters{ // is class me bhi aik constructor hi defined hai par is class
+    // me contructor me parameters paas kiye gaye hain , aur phr object defined karte waqt arguments aas karege
+    // take ow is contructor me jakar data uthakar le aain
+    private int id;  // private
+    private String name; //private
+    // Constructor (no return type)
+    public myEmployeeUsingConstructorWithParameters(int myId, String myName) {
+        id = myId;
+        name = myName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
 public class constructor {
     public static void main(String[] args) {
         myEmployeeOld e = new myEmployeeOld(); // without constructor class
@@ -37,5 +76,15 @@ public class constructor {
         e.setName("Bob"); // setting
         System.out.println(e.getName());// getting
         System.out.println(e.getId()); // getting
+
+        // using constructor without parameters/ arguments:
+        myEmployeeUsingConstructor constructor = new myEmployeeUsingConstructor();
+        System.out.println(constructor.getId());
+        System.out.println(constructor.getName());
+
+        // using constructor with parameters/ arguments:
+        myEmployeeUsingConstructorWithParameters constructorWithParameters = new myEmployeeUsingConstructorWithParameters(23,"amber");
+        System.out.println(constructorWithParameters.getId());
+        System.out.println(constructorWithParameters.getName());
     }
 }
