@@ -1,8 +1,8 @@
 package com.company.chapter9;
 
 class Cylinder{
-    int radius;
-    int height;
+    private int radius;
+    private int height;
     public void setRadius(int radius){
         this.radius = radius;
     }
@@ -23,7 +23,7 @@ public class practiceSet {
         System.out.println("QUESTION # 01: Create a class cylinder and use getters and setters to set its radius and height ");
         Cylinder c = new Cylinder();
         c.setRadius(5);
-        c.setHeight(5);
+        c.setHeight(6);
         System.out.println(c.getRadius());
         System.out.println(c.getHeight());
         System.out.println("QUESTION # 02: Use question 1 to calculae surface area and volume of cylinder");
