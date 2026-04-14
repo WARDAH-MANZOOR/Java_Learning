@@ -56,9 +56,44 @@ class myEmployeeUsingConstructorWithParameters{ // is class me bhi aik construct
     private int id;  // private
     private String name; //private
     // Constructor (no return type)
+
+
     public myEmployeeUsingConstructorWithParameters(int myId, String myName) {
         id = myId;
         name = myName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+class myEmployeeUsingMethodOverloading{ // yahan hum constructorme method overloading ka concept use karrahe hain
+    // matlab ye ke aik hi claas me same name ke constructor methods , example ke tor me aik contructor 2 parameters
+    // le araha hai par dosra cnstrucror koi parameter nahi leraha ab agr humne object intialize karte waqt argumets
+    // diye honge tou wwo wala constructor us ehoga jisme parameters defined hain aur agr kuch bhi nahi dia hoga
+    // as argumets tou wo wala contructor method use hoga jisme koi parameter nahi jata
+
+    private int id;  // private
+    private String name; //private
+    // Constructor (no return type)
+    // neeche 3 contructor bane hain same name se agr me object initializtion ke time par 2 arguments daloongi tou
+    // 2 parameters wala constructor call hoga , 1 daloongi tou 1 wala aur agr koi arguments nahi doongi tou wo wala
+    // constructor call hoga jisme koi parameters nahi hain
+    public myEmployeeUsingMethodOverloading(int myId, String myName) {
+        id = myId;
+        name = myName;
+    }
+    public myEmployeeUsingMethodOverloading() {// same contructor name with no parameters
+        id = 45;
+        name = "Wardah";
+    }
+    public myEmployeeUsingMethodOverloading(int myId) { // same contructor name with 1 parameter
+        id = myId;
     }
 
     public int getId() {
@@ -86,5 +121,10 @@ public class constructor {
         myEmployeeUsingConstructorWithParameters constructorWithParameters = new myEmployeeUsingConstructorWithParameters(23,"amber");
         System.out.println(constructorWithParameters.getId());
         System.out.println(constructorWithParameters.getName());
+
+        // using constructor with with method overloading:
+        myEmployeeUsingMethodOverloading constructorWithMethodOverloading = new myEmployeeUsingMethodOverloading(23);
+        System.out.println(constructorWithMethodOverloading.getId());
+        System.out.println(constructorWithMethodOverloading.getName());
     }
 }
