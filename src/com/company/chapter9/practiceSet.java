@@ -53,6 +53,38 @@ class CylinderUsingConstructor{
     }
 
 }
+
+class Rectangle{
+    private int length;
+    private int breadth;
+
+    public Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+    public Rectangle() {
+        this.length = 55;
+        this.length = 34;
+    }
+
+    public int getLength() {
+        return length;
+    }
+    public int getBreadth() {
+        return breadth;
+    }
+
+}
+class Sphere{
+    private int radius;
+
+    public void setRadius(int radius){
+        this.radius = radius;
+    }
+    public int getRadius(){
+        return this.radius;
+    }
+}
 public class practiceSet {
     public static void main(String[] args) {
         System.out.println("PRACTICE QUESTIONS FOR CHAPTER 9");
@@ -75,7 +107,13 @@ public class practiceSet {
         System.out.println(cc.getHeight());
 
         System.out.println("QUESTION # 04: Overload a constructor used to initialize a rectangle of length 4 and breadth 5 for using custom parameters");
+        Rectangle r = new Rectangle(45,22);
+        System.out.println(r.getLength());
+        System.out.println(r.getBreadth());
 
         System.out.println("QUESTION # 05: Repeat question1 for sphere");
+        Sphere sp = new Sphere();
+        sp.setRadius(5);
+        System.out.println(sp.getRadius());
     }
 }
