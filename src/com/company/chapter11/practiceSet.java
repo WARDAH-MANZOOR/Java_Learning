@@ -35,6 +35,23 @@ class Human extends Monkey implements Animal{
         System.out.println("Sleep");
     }
 }
+
+abstract class Telephone{
+    abstract void ring();
+    abstract void lift();
+    abstract void disconnect();
+}
+class SmartTelephone extends Telephone{
+    void ring(){
+        System.out.println("Ring");
+    }
+    void lift(){
+        System.out.println("Lift");
+    }
+    void disconnect(){
+        System.out.println("Disconnect");
+    }
+}
 public class practiceSet {
     public static void main(String[] args) {
         System.out.println("PRACTICE QUESTIONS FOR CHAPTER 11");
@@ -54,8 +71,18 @@ public class practiceSet {
         human.sleep();
         human.bite();
         System.out.println("QUESTION # 04: Create a class Telephone with ring(), lift() and disconnect() methods as abstract methods. Create another class SmartTelephone and demonstrate polymorphism.");
+        // Polymorphism
+        Telephone obj = new SmartTelephone();
 
+        obj.ring();
+        obj.lift();
+        obj.disconnect();
         System.out.println("QUESTION # 05: Demonstrate polymorphism using Monkey class from Q3.");
+        Monkey monkey = new Human();
+
+        monkey.jump();  // Monkey ka method
+        monkey.bite();  // Monkey ka method
+
 
         System.out.println("QUESTION # 06: Create an interface TVRemote and use it to inherit another interface SmartTVRemote.");
 
