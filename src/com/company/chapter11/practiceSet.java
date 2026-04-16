@@ -52,6 +52,23 @@ class SmartTelephone extends Telephone{
         System.out.println("Disconnect");
     }
 }
+
+interface TVRemote{
+    void switchoff();
+}
+interface SmartTVRemote extends TVRemote{
+    void switchon();
+
+}
+class TV implements SmartTVRemote{
+    public void switchoff(){
+        System.out.println("Switchoff");
+    }
+    public void switchon(){
+        System.out.println("Switchon");
+    }
+
+}
 public class practiceSet {
     public static void main(String[] args) {
         System.out.println("PRACTICE QUESTIONS FOR CHAPTER 11");
@@ -87,6 +104,9 @@ public class practiceSet {
         System.out.println("QUESTION # 06: Create an interface TVRemote and use it to inherit another interface SmartTVRemote.");
 
         System.out.println("QUESTION # 07: Create a class TV which implements TVRemote interface from Q6.");
+        TV tv = new TV();
+        tv.switchoff();
+        tv.switchon();
 
     }
 }
