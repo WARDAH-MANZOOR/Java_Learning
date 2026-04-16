@@ -9,6 +9,10 @@ package com.company.chapter11;
 // normal class me hum srf aik hi class ko at a time extend karskate matlab child ne parent class ko extend kia par
 // child parent1 ki class ko ab extend nahi karsta , par interface me ye possible hai multiple intefaces ko implement
 // kia jaskata haia ur extend bhi kia jsakta hai
+// hum interface me defined properties ko acess karsakte hain  par unko modify nahi karsakte directly object bnanakar
+// dosri vaues dal kar kuin ke inrefcae me jo properties defined hain wo final hain hum in properties ko  bhi
+// override karsaktehain us class me jisme humne interface implement kia hai
+// hum interface ka object nahi bansakte hain par uska reference banasate ahin
 interface Bicycle{
     int a = 45;
     void apply_brake(int decrement); // decrement isliye ke brake lagae se speed decreemet hoti hai
