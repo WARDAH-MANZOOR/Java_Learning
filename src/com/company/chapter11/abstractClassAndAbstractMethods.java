@@ -1,5 +1,8 @@
 package com.company.chapter11;
 // Abstract class : Abstract claas wo hoti hai jisme abstract method ho, abstract class ka object nahi bansakta
+// abstract class me abstract methods + other rmethods dono hoskate hain, matlab ye ke abstract class me atleat aik
+// abstract method hona lazmi hai
+
 // Abstract method:  wo method jo banaya hua hai par implemneted nahi hai bas banaakr rakhdia hai
 abstract class Parent{ // abstract keyword because this class contains abstract method.
     public Parent(){
