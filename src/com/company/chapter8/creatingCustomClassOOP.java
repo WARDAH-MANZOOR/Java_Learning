@@ -28,7 +28,7 @@ class Employee1{  // adding method in custom class
         System.out.println("employee name is "+name);
     }
 }
-public class creatingCustomClass {
+public class creatingCustomClassOOP {
     public static void main(String[] args) {
         System.out.println("This is our custom class");
 
