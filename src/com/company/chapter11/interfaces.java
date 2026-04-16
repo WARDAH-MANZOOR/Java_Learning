@@ -14,6 +14,10 @@ interface Bicycle{
     void apply_brake(int decrement); // decrement isliye ke brake lagae se speed decreemet hoti hai
     void speedUp(int increment); // speed up karne se speed increment hoti hai
 }
+interface HornBicycle{
+    void hornTuTu();
+    void hornPOPO();
+}
 class AvonCycle implements Bicycle{
     void blowHorn(){
         System.out.println("pee peeeeeeee");
@@ -25,12 +29,41 @@ class AvonCycle implements Bicycle{
         System.out.println("speeding up");
     }
 }
+class AvonCycle1 implements Bicycle, HornBicycle{ // this class implements both interfaces
+    void blowHorn(){
+        System.out.println("pee peeeeeeee");
+    }
+    public void apply_brake(int decrement){ // interface ke methods ko jab implement karte hain tou usko public karna parta hai
+        System.out.println("applying brake");
+    }
+    public void speedUp(int increment){// interface ke methods ko jab implement karte hain tou usko public karna parta hai
+        System.out.println("speeding up");
+    }
+
+    @Override
+    public void hornPOPO() {
+        System.out.println(" PO PO PO");
+    }
+
+    @Override
+    public void hornTuTu() {
+        System.out.println(" Tu Tu Tu");
+    }
+}
 public class interfaces {
     public static void main(String[] args) {
         AvonCycle avonCycle = new AvonCycle();
         avonCycle.apply_brake(5);
         System.out.println(avonCycle.a); // hum properties ko acess karsakte ahin interface ki par unko modify nahi karsakte
         // dosri vaues dal kar kuin ke inrefcae me jo properties defined hain wo final hain
+
+        AvonCycle1 avonCycle1 = new AvonCycle1();
+        avonCycle1.speedUp(5);
+        System.out.println(avonCycle1.a);
+        avonCycle1.blowHorn();
+        avonCycle1.apply_brake(5);
+        avonCycle1.hornPOPO();
+        avonCycle1.hornTuTu();
 
     }
 }
