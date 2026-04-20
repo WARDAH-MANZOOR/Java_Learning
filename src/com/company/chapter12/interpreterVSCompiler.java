@@ -10,10 +10,10 @@ package com.company.chapter12;
 //        System.out.println("hello i am wardah");
 //    }
 //}
-// uske baad hum vs code me hi powershell terminal me javac Wardah.java karke file run karenge jese hi ye chalainge
+// uske baad hum vs code me hi powershell terminal me javac Wardah.java karke compile karenge jese hi ye chalainge
 // Wardah.class ke name se file banjaaigi ye compilation ka step hai ye file hum kissi dosre operating system me
-// be us ekarskate ahin aur code chaljaaiga , acha ab agr humme class wali file run karni ahi tou uske liye hum
-// java Wardah likhenge jisse class file run hojaigi
+// be us ekarskate ahin aur code chaljaaiga , acha ab agr humme class wali file run karni ahi jisse code execute hoga
+// tou uske liye hum java Wardah likhenge jisse class file run hojaigi
 
 public class interpreterVSCompiler {
 }
