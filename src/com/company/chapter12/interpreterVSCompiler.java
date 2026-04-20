@@ -15,5 +15,14 @@ package com.company.chapter12;
 // be us ekarskate ahin aur code chaljaaiga , acha ab agr humme class wali file run karni ahi jisse code execute hoga
 // tou uske liye hum java Wardah likhenge jisse class file run hojaigi
 
+import java.util.Scanner; // first mehod of import builtin pacakge util
+//Scanner sc = new Scanner(System.in); // usage
+import java.util.*; // 2nd method of import whole util  built in pacakge
+//Scanner sc = new Scanner(System.in); // usage
+
+// 3rd method not to import direct use of import
+// java.util.Scanner sc = new java.util.Scanner(System.in); // usage
+
+
 public class interpreterVSCompiler {
 }
