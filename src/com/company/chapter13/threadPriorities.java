@@ -4,8 +4,11 @@ class thread3 extends Thread{
         super(name);// calling thread contructor from Thread which have this name parameter
     }
     public void run(){
-        int i = 34;
-        System.out.println("Thank you  " + this.getName() + "!");
+        int i = 0;
+        while(i<500){
+            System.out.println("Thank you  " + this.getName() + "!");
+            i++;
+        }
 
     }
 }
