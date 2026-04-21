@@ -12,7 +12,7 @@ package com.company.chapter13;
 /// parallelism me hum aik hi time me multiple kama karrahe hote hain
 /// multithreadig se humme concurrency milti hai, tou matlab ye ke multithreading humme concurrency achieve karke deti hai
 
-
+// creating thread by extending thread class:
 class Mythread1 extends Thread{
     public void run(){
         int i = 0;
