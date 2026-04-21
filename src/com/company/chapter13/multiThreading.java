@@ -11,6 +11,7 @@ package com.company.chapter13;
 /// kabhi messages me don cheezn ko sath me manage karrahi par ai sath nahi karrahi isse concurrency kehte hain
 /// parallelism me hum aik hi time me multiple kama karrahe hote hain
 /// multithreadig se humme concurrency milti hai, tou matlab ye ke multithreading humme concurrency achieve karke deti hai
+// hum thread ki priority bhi set karsakte hain
 
 // creating thread by extending thread class:
 class Mythread1 extends Thread{
