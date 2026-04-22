@@ -1,4 +1,7 @@
 package com.company.chapter15;
+
+import java.util.HashSet;
+
 // hashing technique: technique to convert key value pairs in indexes, matlab ye ke konse key value pairs konse indexes
 // par storekiye jaainge
 // hashing technique se searching aur insertion  bahut fast hojati hai ye remainder ke basis par store karata hai
@@ -12,8 +15,15 @@ package com.company.chapter15;
 // us third index par aik linkedlist banai jatihai aur phr us linkedlist me dono values dal di jati hain isse
 // chaining method kehte hain
 // hashing classes: hashMap, ahshTable, hashSet,linkedHashMap
-public class hashing {
+public class hashingTechniqueAndHashClassHashSet {
     public static void main(String[] args) {
-
+//        HashSet<Integer> hashSet = new HashSet<Integer>();// agr hum without initial capacity ke argumnet ke likhenege
+        // tou initial capacity 16 set hogi aur load factor 0.75
+        HashSet<Integer> hashSet = new HashSet<Integer>(6,0.5f);
+        hashSet.add(1);
+        hashSet.add(22);
+        hashSet.add(3);
+        hashSet.add(41);
+        System.out.println(hashSet);
     }
 }
