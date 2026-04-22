@@ -9,6 +9,7 @@ public class calendarClass {
         System.out.println(calendar.getCalendarType());
         System.out.println(calendar.getTimeZone());
         System.out.println(calendar.getTimeZone().getID());
+        System.out.println(calendar.getTime());
 
     }
 }
